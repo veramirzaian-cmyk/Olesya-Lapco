@@ -1,0 +1,50 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Olesya Lapko</title>
+
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  
+<script src="{% static 'js/main.js' %}"></script>
+<body>
+
+<header class="header">
+  <div class="container nav">
+
+    <img
+      src="{% static 'images/logo.png' %}"
+      alt="Lapko Olesia"
+      class="logo"
+    >
+
+    <a href="{{ telegram_link }}" class="btn small primary">
+      Записатися
+    </a>
+
+  </div>
+</header>
+
+{% block content %}
+{% endblock %}
+
+<script>
+
+document.querySelectorAll('.accordion').forEach(item => {
+
+    item.addEventListener('click', () => {
+
+        item.classList.toggle('active');
+
+    });
+
+});
+
+</script>
+
+</body>
+</html>

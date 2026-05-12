@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environment
+venv/
+.env/
+
+# Django
+*.log
+staticfiles/
+
+# Media
+media/
+
+# VS Code
+.vscode/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# Environment variables
+.env
+
+# PyCharm
+.idea/
+
+# Migrations cache
+*.pyc
+
+# Heroku / deployment
+.heroku/
+
+# Node
+node_modules/
